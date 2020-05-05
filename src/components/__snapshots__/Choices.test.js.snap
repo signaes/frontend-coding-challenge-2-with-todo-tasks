@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches the snapshot 1`] = `
+<table>
+  <thead>
+    <tr>
+      <th>
+        Choices
+      </th>
+      <th>
+        Votes
+      </th>
+      <th>
+        Percentage
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      key="url1"
+    >
+      <td>
+        a
+      </td>
+      <td>
+        1
+      </td>
+      <td>
+        NaN
+        %
+      </td>
+    </tr>
+    <tr
+      key="url2"
+    >
+      <td>
+        b
+      </td>
+      <td>
+        10
+      </td>
+      <td>
+        NaN
+        %
+      </td>
+    </tr>
+    <tr
+      key="url3"
+    >
+      <td>
+        c
+      </td>
+      <td>
+        100
+      </td>
+      <td>
+        NaN
+        %
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
