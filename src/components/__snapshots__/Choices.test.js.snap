@@ -17,7 +17,7 @@ exports[`matches the snapshot 1`] = `
   </thead>
   <tbody>
     <tr
-      key="url1"
+      key="a-url1"
     >
       <td>
         a
@@ -31,7 +31,7 @@ exports[`matches the snapshot 1`] = `
       </td>
     </tr>
     <tr
-      key="url2"
+      key="b-url2"
     >
       <td>
         b
@@ -45,7 +45,7 @@ exports[`matches the snapshot 1`] = `
       </td>
     </tr>
     <tr
-      key="url3"
+      key="c-url3"
     >
       <td>
         c
