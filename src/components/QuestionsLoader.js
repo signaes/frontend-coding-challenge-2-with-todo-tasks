@@ -9,6 +9,7 @@ export class QuestionsLoader extends PureComponent {
     console.log('componentDidMount');
     this.props.getQuestions();
   }
+
   render() {
     const {list, children} = this.props;
 
