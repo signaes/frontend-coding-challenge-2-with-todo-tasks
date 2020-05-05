@@ -24,7 +24,9 @@ export class Choices extends PureComponent {
                 <td>{percentage}%</td>
                 {this.props.onVote &&
                   <td>
-                    <button onClick={() => this.props.onVote(url)}>
+                    <button
+                      disabled={this.props.fetching}
+                      onClick={() => this.props.onVote(url)}>
                       Vote
                     </button>
                   </td>

@@ -6,21 +6,27 @@ import Choices from '../components/Choices';
 
 export class QuestionDetail extends PureComponent {
   render() {
-    const {question} = this.props;
+    const {question, fetching} = this.props;
     const totalVotes = question.choices.reduce((total, choice) => total + choice.votes, 0)
     return (
       <>
         <h1>Question Detail</h1>
         <hr/>
         <h2>{question.question}</h2>
-        <Choices choices={question.choices} totalVotes={totalVotes} onVote={this.props.vote}/>
+        <Choices
+          choices={question.choices}
+          totalVotes={totalVotes}
+          onVote={this.props.vote}
+          fetching={fetching}
+        />
       </>
     )
   }
 }
 
-const mapStateToProps = (state, ownProps) => ({
-  question: state.questions.list.find(question => question.url.includes(ownProps.match.params.questionId)),
+const mapStateToProps = ({ questions: { list, fetching }}, ownProps) => ({
+  question: list.find(question => question.url.includes(ownProps.match.params.questionId)),
+  fetching,
 });
 
 const mapDispatchToProps = {
